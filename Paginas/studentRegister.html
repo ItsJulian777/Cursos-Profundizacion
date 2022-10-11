@@ -6,7 +6,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="public/imagenes/favicon.ico" rel="Shortcut icon">
-  <title>Cursos De Profundizacion</title>
+  <title>Registro Estudiante</title>
+  <link rel="stylesheet" href="../CSS/StyleRegister.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
@@ -42,14 +43,14 @@
         <div class="row">
           <div class="col-4">
             <a href="https://ingsistemas.cloud.ufps.edu.co/">
-              <img id="logo-header" src="public/imagenes/logo_vertical_ingsistemas_ht180.png"
+              <img id="logo-header" src="../public/imagenes/logo_vertical_ingsistemas_ht180.png"
                 alt="Logo Programa de Ingeniería de Sistemas" style="max-height:120px; max-width: 300px;">
                 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
                 <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
               </a>
           </div>
           <div class="col-4 ">
-            <h1 style="padding:35px 0px 0px 0px; color: white; font-size: 42px;">CURSOS OFERTADOS</h1>
+            <h1 style="padding:35px 0px 0px 0px; color: white; font-size: 42px;">Registro Estudiante</h1>
           </div>
         </div>
       </div>
@@ -59,33 +60,62 @@
   <br>
   <!--=== CUERPO DE LA PAGINA ===-->
   <div class="container">
-    <table class="table table-borderless">
-      <thead>
-        <tr>
-          
-          <th scope="col">Nombre del curso</th>
-          <th scope="col">Estado</th>
-          <th scope="col"></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-        
-          <td>DESARROLLO DE SOFTWARE</td>
-          <td>INACTIVO</td>
-          <td><a href="Paginas/studentRegister.html"><i class="fi fi-sr-edit" style="color: red;" ></i></a></td>
-        </tr>
-        <tr>
-          
-          <td>CCNA-CISCO</td>
-          <td>INACTIVO</td>
-          <td><a href="Paginas/studentRegister.html"><i class="fi fi-sr-edit" style="color: red;" ></i></a></td>
-        </tr>
-       
-      </tbody>  
-    </table>
-      </div>
+    <div class="subcontainer">
 
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">CODIGO</label>
+              <input type="text" class="form-control" id="validationCustom01" required>
+             
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">N° DE DOCUMENTO</label>
+              <input type="text" class="form-control" id="validationCustom02"  required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">NOMBRE COMPLETO</label>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">DIRECCION</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+             
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">TELEFONO</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+            </div> <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">CORREO</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+              </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">N° CONSIGNACION</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom05" class="form-label">COMPROBANTE DE PAGO</label>
+                <input type="file" class="form-control" id="validationCustom05" required>
+                
+              </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input bg-danger" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Autorizacion para el tramiento de datos personales.
+                </label>
+                <div class="invalid-feedback">
+                  Te hez Registrado Correctamente.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-danger" type="submit">Registrar</button>
+            </div>
+          </form>
+   
+      </div>
+    </div>
     </div>
   </div>
   <br><br>
