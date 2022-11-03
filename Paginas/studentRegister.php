@@ -159,20 +159,7 @@
   </div>
   </div>
   <br><br>
-  <div class=" text-secondary bg-light">
-    <hr>
-    <div class="" align="center">
-      <div class="col-6">
-        Copyright © 2022 UFPS - Todos los Derechos Reservados
-        <br>
-        Desarrollado por: JOSE JULIAN FORERO PEREZ - YIEISON JOSE LIZARAZO - <br>OSCAR FELIPE CACERES SUAREZ
-        <br>
-        Versión: 1.0
-        <br>
-      </div>
-      <br>
-    </div>
-  </div>
+  
   <!-- Javascript files -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
