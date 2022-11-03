@@ -21,29 +21,7 @@
 </head>
 
 <body>
-  <!--
-
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-danger">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">UFPS</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">CURSOS OFERTADOS</a>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">ACERCA DE</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  -->
-
+ 
   <div class="header-v8 img-logo-superior" style="background-color: #E81B1B;">
     <!--=== Parallax Quote ===-->
     <div class="parallax-quote parallaxBg" style="padding: 0px 30px; height: 120px;">
@@ -64,24 +42,49 @@
     </div>
     <!--=== PRESENTACION DE LOGOS DE LA UFPS ===-->
   </div>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../Cursos.php">UFPS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="./AcercaDe.php">ACERDA-DE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+              <div class="salir">
+              <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                <path d="M7.5 1v7h1V1h-1z"/>
+                <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
+              </svg></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <br>
   <!--=== CUERPO DE LA PAGINA ===-->
   <div class="container">
-    <div class="subcontainer">
-
-      <form class="row g-3 needs-validation" novalidate>
+    <div class="subcontainer1">
+        
+      <form action="./Controlador/registrar.php" method="post" class="row g-3 needs-validation" >
         <div class="col-md-4">
           <label for="validationCustom01" class="form-label">CODIGO</label>
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-br-hastag"></i></span>
-            <input type="text" class="form-control" id="validationCustom01" required>
+            <input type="text" name="codigo" class="form-control" id="validationCustom01" required>
           </div>
         </div>
         <div class="col-md-4">
           <label for="validationCustom02" class="form-label">N° DE DOCUMENTO</label>
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-br-hastag"></i></span>
-            <input type="text" class="form-control" id="validationCustom01" required>
+            <input type="text" name="documento" class="form-control" id="validationCustom01" required>
           </div>
         </div>
         <div class="col-md-4">
@@ -89,7 +92,7 @@
          
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-user"></i></span>
-            <input type="text" class="form-control" id="validationCustom01" required>
+            <input type="text" name="nombre" class="form-control" id="validationCustom01" required>
           </div>
         </div>
         <div class="col-md-6">
@@ -97,7 +100,7 @@
 
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-rs-marker"></i></span>
-            <input type="text" class="form-control" id="validationCustom01" required>
+            <input type="text" name="direccion" class="form-control" id="validationCustom01" required>
           </div>
 
         </div>
@@ -105,29 +108,30 @@
           <label for="validationCustom04" class="form-label">TELEFONO</label>
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-phone-call"></i></span>
-            <input type="text" class="form-control" id="validationCustom01" required>
+            <input type="text" name="telefono" class="form-control" id="validationCustom01" required>
           </div>
         </div>
         <div class="col-md-3">
           <label for="validationCustom04" class="form-label">CORREO</label>
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-envelope"></i></span>
-            <input type="text" class="form-control" id="validationCustom01" required>
+            <input type="text" name="correo" class="form-control" id="validationCustom01" required>
           </div>
         </div>
         <div class="col-md-3">
           <label for="validationCustom05" class="form-label">N° CONSIGNACION</label>
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-credit-card"></i></span>
-            <input type="text" class="form-control" id="validationCustom01" required>
+            <input type="text" name="consignacion" class="form-control" id="validationCustom01" required>
           </div>
 
         </div>
+        
         <div class="col-md-6">
           <label for="validationCustom05" class="form-label">COMPROBANTE DE PAGO</label>
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-document"></i></span>
-            <input type="text" class="form-control" id="validationCustom01" required>
+            <input type="file" name="comprobante" class="form-control" id="validationCustom01" required>
           </div>
 
         </div>
@@ -137,18 +141,21 @@
             <label class="form-check-label" for="invalidCheck">
               Autorizacion para el tramiento de datos personales.
             </label>
-            <div class="invalid-feedback">
-              Te hez Registrado Correctamente.
-            </div>
+           
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn-danger" type="submit">Registrar</button>
+          <button  class="btn btn-danger" name="registro" type="submit">Registrar</button>
         </div>
       </form>
 
     </div>
+    <div class="subcontainer2">
+      <img src="../Image/libro-de-lectura.png" alt="Foto" class="imagen">
+
+    </div>
   </div>
+
   </div>
   </div>
   <br><br>

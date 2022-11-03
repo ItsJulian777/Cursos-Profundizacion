@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel='stylesheet' href="./CSS/StyleRegister.css" >
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link href="public/imagenes/favicon.ico" rel="Shortcut icon">
@@ -16,25 +17,7 @@
 <body>
   <!--
 
-  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-danger">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">UFPS</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">CURSOS OFERTADOS</a>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">ACERCA DE</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
   -->
 
   <div class="header-v8 img-logo-superior" style="background-color: #E81B1B;">
@@ -58,6 +41,31 @@
     </div>
     <!--=== PRESENTACION DE LOGOS DE LA UFPS ===-->
   </div>
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-danger">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">UFPS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="./Paginas/AcercaDe.php">ACERCA-DE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+              <div class="salir">
+              <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
+                <path d="M7.5 1v7h1V1h-1z"/>
+                <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
+              </svg></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <br>
   <!--=== CUERPO DE LA PAGINA ===-->
   <div class="container">
@@ -75,13 +83,13 @@
         
           <td>DESARROLLO DE SOFTWARE</td>
           <td>INACTIVO</td>
-          <td><a href="Paginas/studentRegister.html"><i class="fi fi-sr-edit" style="color: red;" ></i></a></td>
+          <td><a href="Paginas/studentRegister.php"><i class="fi fi-sr-edit" style="color: red;" ></i></a></td>
         </tr>
         <tr>
           
           <td>CCNA-CISCO</td>
           <td>INACTIVO</td>
-          <td><a href="Paginas/studentRegister.html"><i class="fi fi-sr-edit" style="color: red;" ></i></a></td>
+          <td><a href="Paginas/studentRegister.php"><i class="fi fi-sr-edit" style="color: red;" ></i></a></td>
         </tr>
        
       </tbody>  

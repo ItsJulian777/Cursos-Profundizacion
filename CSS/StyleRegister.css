@@ -1,4 +1,45 @@
-.subcontainer{
-    width: 75%;
-    margin: 100px auto;
+
+.subcontainer1{
+    float: right;
+    width: 60%;
+    margin:20px ;
+    box-sizing: border-box;
+    font-size: 10px;
+    
+}
+.subcontainer2{
+    width: 50%;
+    margin:20px ;
+    box-sizing: border-box;
+    font-size: 10px;
+    
+}
+.salir{
+    margin-left:0;
+
+}
+.imagen{
+    width: 50%;
+    margin-left: auto ;
+}
+.imagenCisco{
+    width: 100%;
+    margin-left: auto ;
+}
+
+.ok{
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #1e6;
+    color: #fff;
+}
+
+.bad{
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #a22;
+    color: #fff;
+
 }
