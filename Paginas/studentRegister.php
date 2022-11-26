@@ -1,3 +1,8 @@
+<?php
+include '../Modelo/Conexion/conexion.php';
+
+?>
+
 <!doctype html>
 <html lang="es">
 
@@ -72,7 +77,7 @@
   <div class="container">
     <div class="subcontainer1">
         
-      <form action="./Controlador/registrar.php" method="post" class="row g-3 needs-validation" >
+      <form action="../Controlador/registrar.php" method="POST" class="row g-3 needs-validation" enctype="multipart/form.data">
         <div class="col-md-4">
           <label for="validationCustom01" class="form-label">CODIGO</label>
           <div class="input-group">
@@ -118,34 +123,26 @@
             <input type="text" name="correo" class="form-control" id="validationCustom01" required>
           </div>
         </div>
+
         <div class="col-md-3">
           <label for="validationCustom05" class="form-label">N° CONSIGNACION</label>
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-credit-card"></i></span>
-            <input type="text" name="consignacion" class="form-control" id="validationCustom01" required>
+            <input type="text" name="consignacion" class="form-control" id="validationCustom01"required  >
           </div>
-
-        </div>
+          </div>
         
         <div class="col-md-6">
           <label for="validationCustom05" class="form-label">COMPROBANTE DE PAGO</label>
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend2"><i class="fi fi-sr-document"></i></span>
-            <input type="file" name="comprobante" class="form-control" id="validationCustom01" required>
-          </div>
+            <input type="file" name="comprobante" class="form-control" id="validationCustom01" required >
+           </div>
 
         </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input bg-danger" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-              Autorizacion para el tramiento de datos personales.
-            </label>
-           
-          </div>
-        </div>
-        <div class="col-12">
-          <button  class="btn btn-danger" name="registro" type="submit">Registrar</button>
+       
+       <div class="col-12">
+          <input  class="btn btn-danger" name="registro" type="submit"></button>
         </div>
       </form>
 
@@ -159,7 +156,20 @@
   </div>
   </div>
   <br><br>
-  
+  <div class=" text-secondary bg-light">
+    <hr>
+    <div class="" align="center">
+      <div class="col-6">
+        Copyright © 2022 UFPS - Todos los Derechos Reservados
+        <br>
+        Desarrollado por: JOSE JULIAN FORERO PEREZ - YIEISON JOSE LIZARAZO - <br>OSCAR FELIPE CACERES SUAREZ
+        <br>
+        Versión: 1.0
+        <br>
+      </div>
+      <br>
+    </div>
+  </div>
   <!-- Javascript files -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
