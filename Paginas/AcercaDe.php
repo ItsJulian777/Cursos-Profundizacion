@@ -70,12 +70,12 @@
   <br>
   <!--=== CUERPO DE LA PAGINA ===-->
   
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-      <h3 class="" align="center">CCNA Routing and Switching – Scope and Sequence </h3>
-      <hr>
+    <div class="container">
       <div class="row">
+        <div class="col-6">
+          <h3 class="" align="center">CCNA Routing and Switching – Scope and Sequence </h3>
+         <hr>
+          <div class="row">
           <div class="col-7">
               <p class="">
                 El contenido de <b>Cisco CCNA Routing & Switching</b> está diseñado por <b>Networking Academy ®</b>  
@@ -100,9 +100,9 @@
                 Internacional en Redes de Computadores Cisco y proyectar a la Universidad como una Institución 
                 de capacitación en Tecnologías con estándares internacionales.
               </p>
-          </div>
+            </div>
+        </div>
       </div>
-    </div>
     <div class="col-6">
       <h3 class="" align="center">CCNA</h3>
       <hr>

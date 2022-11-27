@@ -1,16 +1,17 @@
 <?php
-
-$servername = "localhost";
-$database = "cursos-profundizacion";
-$username = "root";
-$password = "";
+include ("configuracion.php");
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
+$conn = new mysqli($servername, $username, $password, $database);
+$conn->set_charset("utf8");
 // Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+if (mysqli_connect_error()) {
+    echo "Connection failed: " . mysqli_connect_error();
+    exit();
+}else{
 echo "Connected successfully";
 mysqli_close($conn);
+
+}
+
 
 ?>

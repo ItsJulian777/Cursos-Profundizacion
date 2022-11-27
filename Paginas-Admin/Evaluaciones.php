@@ -12,13 +12,13 @@
     <title>Cusor-Profundizacion</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -31,7 +31,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -43,7 +43,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>INICIO</span></a>
             </li>
@@ -54,9 +54,9 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="Paginas/Cursos.php">
+                <a class="nav-link" href="Aprovar-Estudiante.php">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Cursos</span></a>
+                    <span>Aprovar-Estudiantes</span></a>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
@@ -64,15 +64,15 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                     aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Informacion-Cursos</span>
+                    <span>Informacion-Estudiantes</span>
                 </a>
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                        
-                        <a class="collapse-item" href="utilities-color.html">Calificaciones</a>
-                        <a class="collapse-item" href="utilities-border.html">Tareas</a>
-                        <a class="collapse-item" href="Paginas/Confirmado-por-Admin/Evaluacion-curso.php">Evaluaciones</a>
+                        <a class="collapse-item" href="Estudiantes-Matriculados.php">Estudiantes-Matriculados</a>
+                        <a class="collapse-item" href="Tareas.php">Tareas</a>
+                        <a class="collapse-item" href="utilities-animation.html">Evaluaciones</a>
                         <a class="collapse-item" href="utilities-other.html">Exposiciones</a>
                     </div>
                 </div>
@@ -100,16 +100,16 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Certificado</span></a>
+                    <span>Dar-Certificado</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="#">
                     <i class="fa fa-credit-card-alt"></i>
-                    <span>Evaluacion-Docente</span></a>
+                    <span>Dar-Evaluacion-Docente</span></a>
             </li>
 
             <!-- Divider -->
@@ -174,17 +174,13 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Usuario</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrador</span>
                                 <img class="img-profile rounded-circle"
-                                    src="img/undraw_profile.svg">
+                                    src="../img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="Paginas/IniciarSesion.php">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Login
-                                </a>
                         
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -204,14 +200,135 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">PAGINA-PRINCIPAL</h1>
+                    <h1 class="title-page">
+                                
+                                <span>Registro de examenes</span>
+                                
+                            </h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
                  
             <!-- End of Main Content -->
+        
+            <div class="main-container">           
+        	
 
+            <div class="page-wrap">
+            
+                <section class="content">
+
+            
+
+                    <div class="add-testBar">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="add-testWrap col-12 col-sm-6">
+                                    <form action="examenes.php" method="post" class="add-testForm form-inline" role="search" name="add-testForm">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <label for="test-name" id="test-nameLabel" class="test-nameLabel col-12 col-md-3 col-lg-2  no-padding">
+                                                    Nombre:
+                                                </label>
+                                                <input type="text" name="testName" class="form-control test-nameTxt col-8 col-sm-8 col-md-6 col-lg-8" placeholder="Nombre del examen">
+                                                <button name="add-testBtn" class="btn add-testBtn col-4 col-sm-4 col-md-3 col-lg-2">
+                                                    Registrar
+                                                </button>
+                                            </div>
+                                                  
+                                        </div>
+                                    </form>  
+                                </div>
+                                
+                            </div>
+                        </div>    
+                    </div>
+
+                </section>
+            
+            </div>
+
+        </div>
+        <div class="modal" id="del-testModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Eliminar</h5>
+                <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                    <span class="" id="del-modalTxt">
+                        Esta seguro que quiere eliminar el examen <strong><span class="" id="modal-testName"></span>.</strong>
+                    </span> 
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn close-modal" data-dismiss="modal">Cerrar</button>
+                <button type="button" id="del-testConfirm" value="" class="btn del-testConfirm">Borrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="config-testModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Configuracion</h5>
+                <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                
+                    <form class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="do-time" class="col-form-label">Hora de aplicacion:</label>
+                                    <input type="time" class="form-control data-config" id="do-time" tabindex="1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="do-date" class="col-form-label">Fecha de aplicacion:</label>
+                                    <input type="date" class="form-control data-config" id="do-date" tabindex="2">
+                                </div>
+                                <div class="form-group">
+                                    <label for="expiration-time" class="col-form-label">Hora de expiracion:</label>
+                                    <input type="time" class="form-control data-config" id="expiration-time" tabindex="3">
+                                </div>
+                                <div class="form-group">
+                                    <label for="expiration-date" class="col-form-label">Fecha de Expiracion:</label>
+                                    <input type="date" class="form-control data-config" id="expiration-date" tabindex="4">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <label for="prom-min" class="col-form-label">Promedio minimo:</label>
+                                    <input type="number" class="form-control data-config" id="prom-min" tabindex="5">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn close-modal" data-dismiss="modal" tabindex="7">Cerrar</button>
+                <button type="button" id="save-configBtn" value="" class="btn save-configBtn" tabindex="6">Guardar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+        <script src="views/theme/js/libs/datatables.min.js"></script>
+        <script src="modulos/examenes/views/theme/js/classes/Add_test.js"></script>
+        <script src="modulos/examenes/views/theme/js/test.js"></script>
+    
+    </body>
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -254,21 +371,21 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="../js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="../vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="../js/demo/chart-area-demo.js"></script>
+    <script src="../js/demo/chart-pie-demo.js"></script>
 
 </body>
 
